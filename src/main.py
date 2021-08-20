@@ -1,4 +1,5 @@
 from src import allTheFunctions, Cplayer
+from menu import menu
 
 ich = Cplayer.spieler
 ich.armorValue = allTheFunctions.calc_armor(ich)
@@ -8,6 +9,8 @@ def main():
     print("armor wert:", ich.armorValue)
     inprogress = True
     while inprogress:
+        #functions = [(sum)] #?????????????????????????
+        #menu("eine frage?", functions)
         userinput = input("Was willst du tun? \n")
         if userinput in ["links", "rechts", "hoch", "runter"]:
             allTheFunctions.move(ich, userinput)
