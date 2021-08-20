@@ -1,4 +1,6 @@
-import Citem
+from src import Citem
+
+
 class player:
 
 

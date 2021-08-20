@@ -1,8 +1,9 @@
-import random
-import Cmonster
-import Citem as item
-import time
+#!/usr/bin/python
+#coding=utf-8
 
+import random
+from src import Citem as item, Cmonster
+import time
 
 def move(ich, userinput):
     if userinput == "dmg":

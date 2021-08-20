@@ -1,6 +1,4 @@
-import Cplayer
-import allTheFunctions
-
+from src import allTheFunctions, Cplayer
 
 ich = Cplayer.spieler
 ich.armorValue = allTheFunctions.calc_armor(ich)

@@ -1,3 +1,6 @@
+#!/usr/bin/python
+#coding=utf-8
+
 class items:
     def __init__(self, name, price, rarity):
         self.name = name
