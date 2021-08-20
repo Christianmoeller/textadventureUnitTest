@@ -9,7 +9,8 @@ def menu(question, functions):
         if userinput.isnumeric():
             userinput = int(userinput)-1
             if userinput in list(range(len(answerlist))):
-                functions[answerlist[userinput]]()
+                function = functions[answerlist[userinput]]
+                perform(function[0], function[1])
                 notDone = False
             else:
                 print("Bitte eine passende Antwort")
@@ -20,5 +21,5 @@ def menu(question, functions):
             else:
                 print("Bitte eine passende Antwort")
 
-def perform(func, **args):
-    func(args)
+def perform(func, args):
+    func(*args)
