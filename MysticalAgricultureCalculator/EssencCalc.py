@@ -56,6 +56,7 @@ def calcForSupremium():
     except ValueError:
         print("Bitte Zahleingeben")
 
+    pylolo = 0
 def calcForInsanium():
     outputVariable = inputFeld.get()
     try:
